@@ -15,7 +15,7 @@ function palindromeCheck(event) {
 	var strReverse = word.split('').reverse().join('');
 	
 	//test the reverse to the original string
-	if (strReverse == word)
+	if (strReverse === word)
 	{
 		output.innerHTML = "True- " + word + " is a palindrome";
 	}
@@ -23,7 +23,7 @@ function palindromeCheck(event) {
 	{
 		output.innerHTML = "False- " + word + " is not a palindrome";
 	}
-	event.preventDefault()
+	event.preventDefault();
 }
 
 //palindromeCheck receives notification when the submit event occures
